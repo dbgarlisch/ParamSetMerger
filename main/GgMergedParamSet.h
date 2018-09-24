@@ -5,9 +5,10 @@
 #include <string>
 #include <vector>
 
-#include "GgParam.h"
 #include "GgMergedParam.h"
+#include "GgParam.h"
 #include "GgParamSet.h"
+#include "GgParamSetBase.h"
 #include "utils.h"
 
 
@@ -31,9 +32,9 @@ public:
     {
     }
 
-    void merge(const GgParamSet &paramSet)
+    void merge(const GgParamSet &paramSet, const bool allowEmpty = false)
     {
-        if (!paramSet.empty()) {
+        if (allowEmpty || !paramSet.empty()) {
             ++mergedSetCnt_;
             for (const GgParam &param : paramSet.params()) {
                 GgMergedParam *mp = find(param.getName());

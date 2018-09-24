@@ -35,5 +35,8 @@
     <ClInclude Include="GgMergedParamSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GgParamSetBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

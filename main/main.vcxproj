@@ -89,6 +89,7 @@
     <ClInclude Include="GgMergedParamSet.h" />
     <ClInclude Include="GgParam.h" />
     <ClInclude Include="GgParamSet.h" />
+    <ClInclude Include="GgParamSetBase.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
